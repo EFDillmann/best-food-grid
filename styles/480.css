@@ -1,0 +1,64 @@
+.hero{
+    grid-template-columns: 1fr minmax(250px, 1fr);
+    grid-template-areas: 
+        "title img"
+        "info img"
+    ;
+    justify-items: center;
+    text-align: left;
+}
+.hero--title{
+    align-self: end;
+    max-width: 270px;
+}
+.hero--info{
+    grid-area: info;
+    max-width: 270px;
+}
+.hero--img{
+    grid-area: img;
+    align-self: center;
+}
+
+.services--title{
+    font-size: 1.9em;
+}
+.services--gallery{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 200px);
+}
+.services--gallery img{
+    height: 100%;
+    object-fit: cover;
+}
+.services--gallery img:nth-child(1){
+    grid-area: 1 / 1 / 3 / 2;
+}
+.services--gallery img:nth-child(2){
+    grid-area: 1 / 2;
+}
+.services--gallery img:nth-child(3){
+    grid-area: 2 / 2;
+}
+.services--gallery img:nth-child(4){
+    grid-area: 3 / 1;
+}
+.services--gallery img:nth-child(5){
+    grid-area: 3 / 2;
+}
+
+.menu--title{
+    font-size: 1.7em;
+}
+.menu--list{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.menu--list img:nth-child(4){
+    position: relative;
+    right: -5rem;
+}
+.menu--list img:nth-child(5){
+    position: relative;
+    left: 5rem;
+}

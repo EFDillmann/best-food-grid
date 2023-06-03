@@ -1,0 +1,41 @@
+.hero--title{
+    justify-self: start;
+    margin-left: 5rem;
+}
+.hero--info p{
+    font-size: 1em;
+}
+.hero--info button{
+    font-size: 1.125em;
+}
+.hero--img{
+    width: 90%;
+    height: 100%;
+}
+
+.services--title, .menu--title{
+    margin: 3rem 0;
+}
+.services--gallery{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "video video img1 img2"
+        "video video img3 img4"
+    ;
+}
+.services--gallery img:nth-child(1){
+    grid-area: video;
+}
+.services--gallery img:nth-child(2){
+    grid-area: img1;
+}
+.services--gallery img:nth-child(3){
+    grid-area: img2;
+}
+.services--gallery img:nth-child(4){
+    grid-area: img3;
+}
+.services--gallery img:nth-child(5){
+    grid-area: img4;
+}

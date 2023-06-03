@@ -1,0 +1,22 @@
+.hero{
+    grid-template-rows: repeat(2, 200px);
+}
+.hero--title{
+    align-self: end;
+    font-size: 3.5rem;
+    line-height: 55px;
+}
+.hero--info{
+    max-width: 400px;
+}
+
+.menu--list{
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+}
+.menu--list img:nth-child(4){
+    position: initial;
+}
+.menu--list img:nth-child(5){
+    position: initial;
+}
